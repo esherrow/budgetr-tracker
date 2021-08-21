@@ -38,6 +38,6 @@
     ],
     "themecolor": "#317EFB",
     "background_color": "#dddddd",
-    "start_url": "../index.html",
+    "start_url": "index.html",
     "display": "standalone"
 }

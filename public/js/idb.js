@@ -21,7 +21,7 @@ request.onerror = function(event){
 
 function saveRecord(record){
     const transaction = db.transaction(['new_transaction'], 'readwrite');
-    const transObjectStore = transaction.transObjectStore('new_transaction');
+    const transObjectStore = transaction.objectStore('new_transaction');
 
     transObjectStore.add(record);
 }
@@ -33,7 +33,7 @@ function uploadTransaction(){
 
     getAll.onsuccess = function(){
         if(getAll.result.length>0){
-            fetch('/api/transaction',{
+            fetch('/api/transaction/bulk',{
                 method:'POST',
                 body: JSON.stringify(getAll.result),
                 headers:{
