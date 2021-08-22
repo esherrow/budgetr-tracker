@@ -3,6 +3,8 @@
   
   ## Description
   Using MongoDB and NoSQL to update an application to become a progressive web application that tracks a budget.  The application has offline functionality, as well as th ability to download the application a device.
+  
+  ![Image of Main Display](http://esherrow.github.io/budgetr-tracker/Budget%20Tracker.JPG)
 
   * [Installation](#installation)
   * [Usage](#usage)
